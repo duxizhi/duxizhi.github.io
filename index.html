@@ -8,6 +8,7 @@
 </head>
 <body>
   hello world!
+  <button id="tongji">统计</button>
 </body>
 </html>
 <script>
@@ -22,6 +23,12 @@
     subtitle: 'The Avalanche at Tunnel Creek',
     author: 'John Branch'
   });
+  var link = document.getElementById('tongji');
+
+  analytics.trackLink(link, 'Clicked tongji', {
+    plan: 'tongji click'
+  });
+
   analytics.page();
   }}();
 </script>
