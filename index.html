@@ -26,7 +26,18 @@
   var link = document.getElementById('tongji');
 
   analytics.trackLink(link, 'Clicked tongji', {
-    plan: 'tongji click'
+    "messageId": "segment-test-message-tongji",
+    "timestamp": "202-07-26T10:58:43.754Z",
+    "type": "track",
+    "email": "test@example.org",
+    "projectId": "vr3985eQn7bAMp1EJyHZyX",
+    "properties": {
+      "property1": 1,
+      "property2": "tongji shabuhoa",
+      "property3": true
+    },
+    "userId": "test-user-r241f",
+    "event": "tongji"
   });
   
   analytics.track({
